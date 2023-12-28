@@ -13,7 +13,7 @@
 
         .contenuto {
             display: flex;
-            padding: 0 3% 10% 12%;
+            padding: 0 3% 0 12%;
         }
 
         .icona {
@@ -60,6 +60,29 @@
         .iscriviti img{
             width: 30px;
             height: 30px;
+        
+        }
+        .bio{
+            padding: 1% 3% 0 12%;
+        }
+
+        .bio .SocialGiornaglieri{
+            display: flex;
+            padding-left: 13rem;
+        }
+
+        .bio .SocialGiornaglieri #x-logo{
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+
+        .bio .SocialGiornaglieri #Threads-logo{
+            cursor: pointer;
+            width: 47px;
+            height: 47px;
+            margin-top: -8px;
+            margin-left: 1%;
         }
     </style>
 
@@ -78,15 +101,43 @@
             </div>
         </div>
         <div class="iscriviti">
-             <button onclick="YouTubeChannel()"">Follow</button>
+             <button onclick="YouTubeChannel()">Follow</button>
+        </div>
+    </div>
+    <div class="bio">
+        <div class="SocialGiornaglieri">
+            <img onclick="XChannel()" src="logo-black.png" alt="X (ex Twitter) logo" id="x-logo">
+            <img onclick="ThreadsChannel()" src="threads-logo-black-01.png" alt="Threads logo" id="Threads-logo">
         </div>
     </div>
 
     <script>
         function YouTubeChannel() {
+            var button = document.querySelector('.iscriviti button');
             var YouTubeChannel = 'https://www.youtube.com/@anime_vs_gamecharacters';
             window.open(YouTubeChannel, '_blank');
+
+            if (button.innerHTML === 'Follow') {
+                button.innerHTML = 'Following';
+                button.style.backgroundColor = 'white';
+                button.style.color = 'black';
+            } else {
+                button.innerHTML = 'Follow';
+                button.style.backgroundColor = 'black';
+                button.style.color = 'white';
+            }
         }
+
+        function XChannel(){
+            var XChannel = 'https://twitter.com/VsCharacters';
+            window.open(XChannel, '_blank');
+        }
+
+        function ThreadsChannel(){
+            var ThreadsChannel = 'https://www.threads.net/@anime_vs_gamecharacters';
+            window.open(ThreadsChannel, '_blank');
+        }
+        
     </script>
 </body>
 
