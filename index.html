@@ -82,7 +82,23 @@
             width: 47px;
             height: 47px;
             margin-top: -8px;
-            margin-left: 1%;
+            margin-left: 2%;
+        }
+
+        .bio .SocialGiornaglieri #YouTube-logo{
+            cursor: pointer;
+            margin-top: -2px;
+            margin-left: 2%;
+            width: 54px;
+            height: 35px;
+        }
+
+        .bio .SocialGiornaglieri #Email-anime-logo{
+            cursor: pointer;
+            margin-top: -25px;
+            margin-left: 2%;
+            width: 64px;
+            height: 64px;
         }
     </style>
 
@@ -108,6 +124,8 @@
         <div class="SocialGiornaglieri">
             <img onclick="XChannel()" src="logo-black.png" alt="X (ex Twitter) logo" id="x-logo">
             <img onclick="ThreadsChannel()" src="threads-logo-black-01.png" alt="Threads logo" id="Threads-logo">
+            <img onclick="CommunityChannel()" src="youtube_social_icon_dark.png" alt="YouTube logo" id="YouTube-logo">
+            <img onclick="Email()" src="posta hd senza sfondo totale.png" alt="Email anime logo" id="Email-anime-logo">
         </div>
     </div>
 
@@ -137,7 +155,18 @@
             var ThreadsChannel = 'https://www.threads.net/@anime_vs_gamecharacters';
             window.open(ThreadsChannel, '_blank');
         }
+
+        function CommunityChannel(){
+            var CommunityChannel = 'https://www.youtube.com/@anime_vs_gamecharacters/community';
+            window.open(CommunityChannel, '_blank');
+        }
         
+        function Email(){
+            var Email = "tuoindirizzoemail@example.com";
+            var mailto = "mailto:" + Email;
+             window.location.href = mailto;
+        }
+
     </script>
 </body>
 
