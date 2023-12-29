@@ -63,7 +63,7 @@
         
         }
         .bio{
-            padding: 1% 3% 0 12%;
+            padding: 0.3% 3% 0 12%;
         }
 
         .bio .SocialGiornaglieri{
@@ -100,6 +100,60 @@
             width: 64px;
             height: 64px;
         }
+
+        .bio .descrizione{
+            display: flex;
+            padding-left: 13rem;
+
+        }
+
+        .bio .descrizione #testo{
+            background: linear-gradient(to right, rgb(0, 0, 0), rgb(148, 148, 148));
+-webkit-background-clip: text;
+color: transparent;
+        }
+
+        .view-profile-btn {
+            cursor: pointer;
+            color: rgb(103, 103, 110);
+            text-decoration: none;
+            margin-left: 1%;
+            font-weight: bold;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .modal-content .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .bio2 p{
+            margin: 3px;
+            margin-top: -1px;
+        }
+
     </style>
 
 </head>
@@ -113,7 +167,7 @@
         <div class="user">
             <h1>Anime&Game together</h1>
             <div class="menzione">
-                <h3>@anime_vs_gamecharacters <br>🔘 73 Followers 🔘 61 videos|</h3>
+                <h3>@anime_vs_gamecharacters <br>🔘 73 Followers 🔘 61 videos</h3>
             </div>
         </div>
         <div class="iscriviti">
@@ -126,6 +180,37 @@
             <img onclick="ThreadsChannel()" src="threads-logo-black-01.png" alt="Threads logo" id="Threads-logo">
             <img onclick="CommunityChannel()" src="youtube_social_icon_dark.png" alt="YouTube logo" id="YouTube-logo">
             <img onclick="Email()" src="posta hd senza sfondo totale.png" alt="Email anime logo" id="Email-anime-logo">
+        </div>
+        <div class="descrizione">
+            <p id="testo">New video about anime or game characters every Sunday or Mon...</p>
+            <p class="view-profile-btn" onclick="openModal()">View Profile</p>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+        <div class="modal-content" onclick="stopPropagation(event)">
+            <div class="close-btn" onclick="closeModal()">X</div>
+            <div class="bio2" id="modalBio">
+                <p>New video about anime or game characters every Sunday or Monday</p>
+                <br>
+                <p>■ Anime&Game together</p>
+                <p>    🔸Website born on 27/12/2023</p>
+                <p>    🔸Budding computer scientist</p>    
+                <br>
+                <p>■ About @anime_vs_gamecharacters:</p>
+                <p>Hi, I'm 18 years old and I'm a person who loves everything that can combine video games and anime. </p>
+                <p>I am currently studying computer science at school. I created this profile to fund my next adventure: attending university!</p>
+                <br>
+                <p>If you'd like to contribute and support my journey, you can do so on the Fiverr platform, i mainly create characters from Anime, Video Games, Anison and VTuber. </p>
+                <p>I welcome your feedback for improvement and look forward to your comments.</p>
+                <p>More Fiverr gigs coming soon. Thanks for your support</p>
+                <br>
+                <p>■ How the website works:</p>
+                <p>In the links below you will find all my social networks, where you can discover my gigs and projects. </p>
+                <p>Outside this window you will see social network icons where I regularly share updates on gigs and projects, plus there is an email icon to contact me via email.</p>
+                <br>
+                <h2>Links</h2>
+            </div>
         </div>
     </div>
 
@@ -163,9 +248,23 @@
         
         function Email(){
             var Email = "tuoindirizzoemail@example.com";
-            var Oggetto = "##- Type the content above this line -## \n\nThe sender (you) found this email via the official YouTube channel ( https://www.youtube.com/@anime_vs_gamecharacters ) or on the official website ( https://vscharacters.github.io/ ), otherwise I would ask you if I could If you could tell me the source of this email, I would be infinitely grateful.\n\nThis email can be used to and for:\n- Report typos or linguistic inaccuracies\n- From anyone who watches my videos for questions and requests (related to the contents of my channel or what I post online, no personal questions)\n- From companies (in this case specify in the subject of the email that it is a company)\n\nRules:\n- Write in English or Italian\n- Enter the subject of the email\n- Be polite\n- Keep email family-friendly\n- Bullying is not allowed\n- No spoilers\n- No personal questions\n- No spam (emoji or text)! ";
+            var Oggetto = "\n##- Type the content above this line -## \n\nThe sender (you) found this email via the official YouTube channel ( https://www.youtube.com/@anime_vs_gamecharacters ) or on the official website ( https://vscharacters.github.io/ ), otherwise I would ask you if I could If you could tell me the source of this email, I would be infinitely grateful.\n\nThis email can be used to and for:\n- Report typos or linguistic inaccuracies\n- From anyone who watches my videos for questions and requests (related to the contents of my channel or what I post online, no personal questions)\n- From companies (in this case specify in the subject of the email that it is a company)\n\nRules:\n- Write in English or Italian\n- Enter the subject of the email\n- Be polite\n- Keep email family-friendly\n- Bullying is not allowed\n- No spoilers\n- No personal questions\n- No spam (emoji or text)! ";
             var mailto = "mailto:" + Email + "?subject=" + encodeURIComponent(Oggetto);
              window.location.href = mailto;
+        }
+
+        function openModal() {
+            var modalOverlay = document.getElementById('modalOverlay');
+            modalOverlay.style.display = 'flex';
+        }
+
+        function closeModal() {
+            var modalOverlay = document.getElementById('modalOverlay');
+            modalOverlay.style.display = 'none';
+        }
+
+        function stopPropagation(event) {
+            event.stopPropagation();
         }
 
     </script>
