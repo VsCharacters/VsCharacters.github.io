@@ -135,23 +135,63 @@ color: transparent;
 
         .modal-content {
             background-color: #fff;
-            padding: 20px;
+            padding: 0px 20px 0px 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
+            width: 32.5rem;
+            height: 32.5rem;
+            overflow: auto;
         }
 
         .modal-content .close-btn {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 16px;
+            right: -12px;
             cursor: pointer;
-            color: #999;
+            color: #3f3f3f;
+            font-size: 26px;
         }
 
         .bio2 p{
             margin: 3px;
             margin-top: -1px;
+        }
+
+        .header-container{
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            padding: 1%;
+        }
+
+        .link1{
+            display: flex;
+            flex-shrink: 0;
+    margin-right: 16px;
+        }
+
+        .linkinside a{
+            direction: none;
+        }
+
+        .linkinside{
+            padding-left: 1rem;
+        }
+        
+        #blue{
+            color: #3ea6ff;
+            cursor: pointer;
+        }
+
+        #bio2-logo{
+            margin-top: 3px;
+            width: 30px;
+            height: 30px;
+        }
+
+        #bold{
+            font-weight: bold;
         }
 
     </style>
@@ -189,8 +229,12 @@ color: transparent;
 
     <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
         <div class="modal-content" onclick="stopPropagation(event)">
-            <div class="close-btn" onclick="closeModal()">X</div>
+            <div class="header-container"> 
+                <h3>Information</h3>
+                <div class="close-btn" onclick="closeModal()">X</div>
+            </div>
             <div class="bio2" id="modalBio">
+                
                 <p>New video about anime or game characters every Sunday or Monday</p>
                 <br>
                 <p>■ Anime&Game together</p>
@@ -210,6 +254,21 @@ color: transparent;
                 <p>Outside this window you will see social network icons where I regularly share updates on gigs and projects, plus there is an email icon to contact me via email.</p>
                 <br>
                 <h2>Links</h2>
+                <div class="link1">
+                    <img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf" alt="Fiverr Favicon" id="bio2-logo">
+                    <div class="linkinside">
+                        <p id="bold">Fiverr</p>
+                        <p onclick="FiverrChannel()" id="blue">fiverr.com/anime_vs_game?source=gig_page</p>
+                    </div>
+                </div>
+                <br>
+                <div class="link1">
+                    <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcRkDQU2watYGs353QT_No2qYzncfVHjE-4tKAfFjB0eA2F_QWpKSTSNj95WSz14JJY58Iyd3Ic2wBWtDu4M05RXzHtDv9Y7olwI4_fp8h453Q" alt="X Favicon" id="bio2-logo">
+                    <div class="linkinside">
+                        <p id="bold">X</p>
+                        <p onclick="XChannel()" id="blue">twitter.com/VsCharacters</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -265,6 +324,11 @@ color: transparent;
 
         function stopPropagation(event) {
             event.stopPropagation();
+        }
+
+        function FiverrChannel(){
+            var FiverrChannel = 'https://www.fiverr.com/anime_vs_game?source=gig_page';
+            window.open(XChannel, '_blank');
         }
 
     </script>
