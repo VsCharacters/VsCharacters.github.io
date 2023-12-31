@@ -16,11 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('path/to/your/banner-image.jpg');
-    background-size: cover;
-    position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
         body {
@@ -30,6 +27,9 @@
         .contenuto {
             display: flex;
             padding: 0 3% 0 12%;
+            position: sticky;
+            bottom: -34px;
+    background-color: rgba(255, 255, 255, 0.826);
     z-index: 2;
         }
 
@@ -39,6 +39,8 @@
         .icona img {
             border-radius: 200px;
             display: flex;
+            position: relative;
+            top: -80px;
         }
 
         .user {
@@ -116,6 +118,7 @@
             margin-left: 2%;
             width: 64px;
             height: 64px;
+            z-index: 3;
         }
 
         .bio .descrizione{
@@ -148,6 +151,7 @@ color: transparent;
             background-color: rgba(0, 0, 0, 0.5);
             justify-content: center;
             align-items: center;
+            z-index: 8;
         }
 
         .modal-content {
@@ -211,6 +215,21 @@ color: transparent;
             font-weight: bold;
         }
 
+        .gigs1{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .scritta{
+            display: flex;
+        }
+
+        .scritta #gigs-logo{
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+
     </style>
 
 </head>
@@ -222,7 +241,7 @@ color: transparent;
     <div class="contenuto">
         <div class="icona">
             <img src="https://yt3.googleusercontent.com/ZJw2NMfKtpB_oBaVM0rQx0GrHXansVIgDQJZkDNxZc62VPaCWZ4560Todsy43tUIBQJer4elpcI=s176-c-k-c0x00ffffff-no-rj"
-                alt="icona azienda">
+                alt="icona azienda (temporanea)">
         </div>
         <div class="user">
             <h1>Anime&Game together</h1>
@@ -316,6 +335,32 @@ color: transparent;
                 <br>
                 <h2>Site details</h2>
                 <p>Websites created with a github subdomain are static sites, therefore there is no data collected on who visits the website or cookies necessary for the functioning of the website</p>
+                <br>
+                <p>The site was updated on: 31/12/2023 20:26 UTC+2</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="corpo-sito">
+        <div class="gigs1">
+            <div class="minecraft-gig">
+                <div class="scritta">
+                    <h2>Gig 1</h2>
+                    <img onclick="FiverrChannel()" src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf" alt="Fiverr Favicon" id="gigs-logo">
+                </div>
+                
+            </div>
+            <div class="minecraft-YouTube">
+                <div class="scritta">
+                    <h2>Lasts Mobs</h2>
+                    <img onclick="YouTubeChannel()" src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg" alt="YouTube Favicon" id="gigs-logo">
+                </div>
+            </div>
+            <div class="minecraft-TikTok">
+                <div class="scritta">
+                    <h2>Last Mobs</h2>
+                    <img onclick="TikTokChannel()" src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw" alt="TikTok Favicon" id="gigs-logo">
+                </div>
             </div>
         </div>
     </div>
