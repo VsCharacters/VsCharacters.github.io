@@ -9,11 +9,28 @@
         href="https://yt3.googleusercontent.com/ZJw2NMfKtpB_oBaVM0rQx0GrHXansVIgDQJZkDNxZc62VPaCWZ4560Todsy43tUIBQJer4elpcI=s176-c-k-c0x00ffffff-no-rj"
         type="image/x-icon">
     <style>
-        body {}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('path/to/your/banner-image.jpg');
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+        body {
+            margin: 0;
+        }
 
         .contenuto {
             display: flex;
             padding: 0 3% 0 12%;
+    z-index: 2;
         }
 
         .icona {
@@ -186,8 +203,8 @@ color: transparent;
 
         #bio2-logo{
             margin-top: 3px;
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
         }
 
         #bold{
@@ -199,6 +216,9 @@ color: transparent;
 </head>
 
 <body>
+    <div class="banner">
+<img src="./Copertina riassunto 2023.png" alt="Page banner (temporaneo)">
+    </div>
     <div class="contenuto">
         <div class="icona">
             <img src="https://yt3.googleusercontent.com/ZJw2NMfKtpB_oBaVM0rQx0GrHXansVIgDQJZkDNxZc62VPaCWZ4560Todsy43tUIBQJer4elpcI=s176-c-k-c0x00ffffff-no-rj"
@@ -263,12 +283,39 @@ color: transparent;
                 </div>
                 <br>
                 <div class="link1">
+                    <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg" alt="YouTube Favicon" id="bio2-logo">
+                    <div class="linkinside">
+                        <p id="bold">YouTube</p>
+                        <p onclick="YouTubeChannel()" id="blue">youtube.com/@anime_vs_gamecharacters</p>
+                    </div>
+                </div>
+                <br>
+                <div class="link1">
+                    <img src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw" alt="TikTok Favicon" id="bio2-logo">
+                    <div class="linkinside">
+                        <p id="bold">TikTok</p>
+                        <p onclick="TikTokChannel()" id="blue">tiktok.com/@anime_vs_gamecharacters</p>
+                    </div>
+                </div>
+                <br>
+                <div class="link1">
+                    <img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcSbWGSzjoUBvbeQYMQVUQYBhFL1nms45eempqB0CuVaGwnOpQx5_nVxBco-3dbpKLbBG1GwU9iCcUJSyvfYhDh2iesBrHJz0qCfCXU8wx7c49Wp" alt="YouTube Favicon" id="bio2-logo">
+                    <div class="linkinside">
+                        <p id="bold">Instagram</p>
+                        <p onclick="InstabugChannel()" id="blue">instagram.com/anime_vs_gamecharacters</p>
+                    </div>
+                </div>
+                <br>    
+                <div class="link1">
                     <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcRkDQU2watYGs353QT_No2qYzncfVHjE-4tKAfFjB0eA2F_QWpKSTSNj95WSz14JJY58Iyd3Ic2wBWtDu4M05RXzHtDv9Y7olwI4_fp8h453Q" alt="X Favicon" id="bio2-logo">
                     <div class="linkinside">
                         <p id="bold">X</p>
                         <p onclick="XChannel()" id="blue">twitter.com/VsCharacters</p>
                     </div>
                 </div>
+                <br>
+                <h2>Site details</h2>
+                <p>Websites created with a github subdomain are static sites, therefore there is no data collected on who visits the website or cookies necessary for the functioning of the website</p>
             </div>
         </div>
     </div>
@@ -328,9 +375,18 @@ color: transparent;
 
         function FiverrChannel(){
             var FiverrChannel = 'https://www.fiverr.com/anime_vs_game?source=gig_page';
-            window.open(XChannel, '_blank');
+            window.open(FiverrChannel, '_blank');
         }
 
+        function TikTokChannel(){
+            var TikTokChannel = 'https://www.tiktok.com/@anime_vs_gamecharacters';
+            window.open(TikTokChannel, '_blank');
+        }
+
+        function InstabugChannel(){
+            var InstabugChannel = 'https://www.instagram.com/anime_vs_gamecharacters/';
+            window.open(InstabugChannel, '_blank');
+        }
     </script>
 </body>
 
