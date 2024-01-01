@@ -10,15 +10,18 @@
         type="image/x-icon">
     <style>
 
-.banner img{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    z-index: 1;
-}
+        .banner{
+            background-color: #000000;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            z-index: 1;
+        }
 
         body {
             margin: 0;
@@ -29,12 +32,11 @@
             padding: 0 3% 0 12%;
             position: sticky;
             bottom: -34px;
-    background-color: rgba(255, 255, 255, 0.826);
-    z-index: 2;
+            background-color: rgba(255, 255, 255, 0.826);
+            z-index: 2;
         }
 
-        .icona {
-        }
+        .icona {}
 
         .icona img {
             border-radius: 200px;
@@ -59,12 +61,12 @@
             font-size: 14px;
         }
 
-        .iscriviti{
+        .iscriviti {
             padding-left: 10%;
             padding-top: 2rem;
         }
 
-        .iscriviti button{
+        .iscriviti button {
             background-color: #000000;
             cursor: pointer;
             border-radius: 200px;
@@ -76,27 +78,29 @@
             border: 0;
             padding: 0;
         }
-        .iscriviti img{
+
+        .iscriviti img {
             width: 30px;
             height: 30px;
-        
+
         }
-        .bio{
+
+        .bio {
             padding: 0.3% 3% 0 12%;
         }
 
-        .bio .SocialGiornaglieri{
+        .bio .SocialGiornaglieri {
             display: flex;
             padding-left: 13rem;
         }
 
-        .bio .SocialGiornaglieri #x-logo{
+        .bio .SocialGiornaglieri #x-logo {
             cursor: pointer;
             width: 30px;
             height: 30px;
         }
 
-        .bio .SocialGiornaglieri #Threads-logo{
+        .bio .SocialGiornaglieri #Threads-logo {
             cursor: pointer;
             width: 47px;
             height: 47px;
@@ -104,7 +108,7 @@
             margin-left: 2%;
         }
 
-        .bio .SocialGiornaglieri #YouTube-logo{
+        .bio .SocialGiornaglieri #YouTube-logo {
             cursor: pointer;
             margin-top: -2px;
             margin-left: 2%;
@@ -112,7 +116,7 @@
             height: 35px;
         }
 
-        .bio .SocialGiornaglieri #Email-anime-logo{
+        .bio .SocialGiornaglieri #Email-anime-logo {
             cursor: pointer;
             margin-top: -25px;
             margin-left: 2%;
@@ -121,16 +125,16 @@
             z-index: 3;
         }
 
-        .bio .descrizione{
+        .bio .descrizione {
             display: flex;
             padding-left: 13rem;
 
         }
 
-        .bio .descrizione #testo{
+        .bio .descrizione #testo {
             background: linear-gradient(to right, rgb(0, 0, 0), rgb(148, 148, 148));
--webkit-background-clip: text;
-color: transparent;
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
         .view-profile-btn {
@@ -174,69 +178,105 @@ color: transparent;
             font-size: 26px;
         }
 
-        .bio2 p{
+        .bio2 p {
             margin: 3px;
             margin-top: -1px;
         }
 
-        .header-container{
+        .header-container {
             position: sticky;
             top: 0;
             background-color: #fff;
             padding: 1%;
         }
 
-        .link1{
+        .link1 {
             display: flex;
             flex-shrink: 0;
-    margin-right: 16px;
+            margin-right: 16px;
         }
 
-        .linkinside a{
+        .linkinside a {
             direction: none;
         }
 
-        .linkinside{
+        .linkinside {
             padding-left: 1rem;
         }
-        
-        #blue{
+
+        #blue {
             color: #3ea6ff;
             cursor: pointer;
         }
 
-        #bio2-logo{
+        #bio2-logo {
             margin-top: 3px;
             width: 32px;
             height: 32px;
         }
 
-        #bold{
+        #bold {
             font-weight: bold;
         }
 
-        .gigs1{
+        .gigs1 {
             display: flex;
             justify-content: space-between;
         }
 
-        .scritta{
+        .scritta {
             display: flex;
         }
 
-        .scritta #gigs-logo{
+        .scritta #gigs-logo {
             width: 32px;
             height: 32px;
             cursor: pointer;
         }
 
+        .spazio-immagine{
+            display: grid;
+        }
+
+        .spazio-immagine img{
+            cursor: pointer;
+            clip-path: inset(0 0 0 0);
+    width: 184px;
+    height: 184px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: opacity 0.2s ease-in-out;
+        }
+
+        .spazio-immagine:hover img{
+            opacity: 80%;
+        }
+
+        .spazio-immagine a{
+            cursor: pointer;
+            display: inline;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+    transition: color 0.2s ease 0s;
+        }
+
+        .spazio{
+            display: flex;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="banner">
-<img src="./Copertina riassunto 2023.png" alt="Page banner (temporaneo)">
+        <img src="./Copertina riassunto 2023.png" alt="Page banner (temporaneo)">
     </div>
     <div class="contenuto">
         <div class="icona">
@@ -250,7 +290,7 @@ color: transparent;
             </div>
         </div>
         <div class="iscriviti">
-             <button onclick="YouTubeChannel()">Follow</button>
+            <button onclick="YouTubeChannel()">Follow</button>
         </div>
     </div>
     <div class="bio">
@@ -268,33 +308,39 @@ color: transparent;
 
     <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
         <div class="modal-content" onclick="stopPropagation(event)">
-            <div class="header-container"> 
+            <div class="header-container">
                 <h3>Information</h3>
                 <div class="close-btn" onclick="closeModal()">X</div>
             </div>
             <div class="bio2" id="modalBio">
-                
+
                 <p>New video about anime or game characters every Sunday or Monday</p>
                 <br>
                 <p>■ Anime&Game together</p>
-                <p>    🔸Website born on 27/12/2023</p>
-                <p>    🔸Budding computer scientist</p>    
+                <p> 🔸Website born on 27/12/2023</p>
+                <p> 🔸Budding computer scientist</p>
                 <br>
                 <p>■ About @anime_vs_gamecharacters:</p>
-                <p>Hi, I'm 18 years old and I'm a person who loves everything that can combine video games and anime. </p>
-                <p>I am currently studying computer science at school. I created this profile to fund my next adventure: attending university!</p>
+                <p>Hi, I'm 18 years old and I'm a person who loves everything that can combine video games and anime.
+                </p>
+                <p>I am currently studying computer science at school. I created this profile to fund my next adventure:
+                    attending university!</p>
                 <br>
-                <p>If you'd like to contribute and support my journey, you can do so on the Fiverr platform, i mainly create characters from Anime, Video Games, Anison and VTuber. </p>
+                <p>If you'd like to contribute and support my journey, you can do so on the Fiverr platform, i mainly
+                    create characters from Anime, Video Games, Anison and VTuber. </p>
                 <p>I welcome your feedback for improvement and look forward to your comments.</p>
                 <p>More Fiverr gigs coming soon. Thanks for your support</p>
                 <br>
                 <p>■ How the website works:</p>
-                <p>In the links below you will find all my social networks, where you can discover my gigs and projects. </p>
-                <p>Outside this window you will see social network icons where I regularly share updates on gigs and projects, plus there is an email icon to contact me via email.</p>
+                <p>In the links below you will find all my social networks, where you can discover my gigs and projects.
+                </p>
+                <p>Outside this window you will see social network icons where I regularly share updates on gigs and
+                    projects, plus there is an email icon to contact me via email.</p>
                 <br>
                 <h2>Links</h2>
                 <div class="link1">
-                    <img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf" alt="Fiverr Favicon" id="bio2-logo">
+                    <img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf"
+                        alt="Fiverr Favicon" id="bio2-logo">
                     <div class="linkinside">
                         <p id="bold">Fiverr</p>
                         <p onclick="FiverrChannel()" id="blue">fiverr.com/anime_vs_game?source=gig_page</p>
@@ -302,15 +348,17 @@ color: transparent;
                 </div>
                 <br>
                 <div class="link1">
-                    <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg" alt="YouTube Favicon" id="bio2-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg"
+                        alt="YouTube Favicon" id="bio2-logo">
                     <div class="linkinside">
                         <p id="bold">YouTube</p>
-                        <p onclick="YouTubeChannel()" id="blue">youtube.com/@anime_vs_gamecharacters</p>
+                        <p onclick="YouTubeChannel1()" id="blue">youtube.com/@anime_vs_gamecharacters</p>
                     </div>
                 </div>
                 <br>
                 <div class="link1">
-                    <img src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw" alt="TikTok Favicon" id="bio2-logo">
+                    <img src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw"
+                        alt="TikTok Favicon" id="bio2-logo">
                     <div class="linkinside">
                         <p id="bold">TikTok</p>
                         <p onclick="TikTokChannel()" id="blue">tiktok.com/@anime_vs_gamecharacters</p>
@@ -318,15 +366,17 @@ color: transparent;
                 </div>
                 <br>
                 <div class="link1">
-                    <img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcSbWGSzjoUBvbeQYMQVUQYBhFL1nms45eempqB0CuVaGwnOpQx5_nVxBco-3dbpKLbBG1GwU9iCcUJSyvfYhDh2iesBrHJz0qCfCXU8wx7c49Wp" alt="YouTube Favicon" id="bio2-logo">
+                    <img src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcSbWGSzjoUBvbeQYMQVUQYBhFL1nms45eempqB0CuVaGwnOpQx5_nVxBco-3dbpKLbBG1GwU9iCcUJSyvfYhDh2iesBrHJz0qCfCXU8wx7c49Wp"
+                        alt="YouTube Favicon" id="bio2-logo">
                     <div class="linkinside">
                         <p id="bold">Instagram</p>
                         <p onclick="InstabugChannel()" id="blue">instagram.com/anime_vs_gamecharacters</p>
                     </div>
                 </div>
-                <br>    
+                <br>
                 <div class="link1">
-                    <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcRkDQU2watYGs353QT_No2qYzncfVHjE-4tKAfFjB0eA2F_QWpKSTSNj95WSz14JJY58Iyd3Ic2wBWtDu4M05RXzHtDv9Y7olwI4_fp8h453Q" alt="X Favicon" id="bio2-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcRkDQU2watYGs353QT_No2qYzncfVHjE-4tKAfFjB0eA2F_QWpKSTSNj95WSz14JJY58Iyd3Ic2wBWtDu4M05RXzHtDv9Y7olwI4_fp8h453Q"
+                        alt="X Favicon" id="bio2-logo">
                     <div class="linkinside">
                         <p id="bold">X</p>
                         <p onclick="XChannel()" id="blue">twitter.com/VsCharacters</p>
@@ -334,7 +384,8 @@ color: transparent;
                 </div>
                 <br>
                 <h2>Site details</h2>
-                <p>Websites created with a github subdomain are static sites, therefore there is no data collected on who visits the website or cookies necessary for the functioning of the website</p>
+                <p>Websites created with a github subdomain are static sites, therefore there is no data collected on
+                    who visits the website or cookies necessary for the functioning of the website</p>
                 <br>
                 <p>The site was updated on: 31/12/2023 20:26 UTC+2</p>
             </div>
@@ -346,20 +397,39 @@ color: transparent;
             <div class="minecraft-gig">
                 <div class="scritta">
                     <h2>Gig 1</h2>
-                    <img onclick="FiverrChannel()" src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf" alt="Fiverr Favicon" id="gigs-logo">
+                    <img onclick="FiverrChannel()"
+                        src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf"
+                        alt="Fiverr Favicon" id="gigs-logo">
                 </div>
-                
+                <div class="spazio-immagine">
+                    <img onclick="FiverrMinecraft()" src="https://fiverr-res.cloudinary.com/images/t_medium7,q_auto,f_auto,q_auto,f_auto/gigs/303225371/original/dfa9e258c546efcd54dde9e0066cdf431a56d6f9/create-glow-in-the-dark-mob-for-your-minecraft-bedrock-edition-pc-mobile.png" alt="Minecraft mob ???">
+                    <a href="https://it.fiverr.com/s/0BWX62">I will make mob for Minecraft</a>
+                </div>
             </div>
             <div class="minecraft-YouTube">
                 <div class="scritta">
-                    <h2>Lasts Mobs</h2>
-                    <img onclick="YouTubeChannel()" src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg" alt="YouTube Favicon" id="gigs-logo">
+                    <h2>Latest Mobs</h2>
+                    <img onclick="YouTubeChannel1()"
+                        src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg"
+                        alt="YouTube Favicon" id="gigs-logo">
+                </div>
+                <div class="spazio">
+                <div class="spazio-immagine" >
+                    <img onclick="YouTubeMinecraft2()" src="https://i9.ytimg.com/vi_webp/i658XMyAdOY/mqdefault.webp?v=64e2eb88&sqp=COj5zKwG&rs=AOn4CLCyylWFuGDvPAaBkbY8f0j8Q6vhEw" alt="Minecraft mob Kafka YouTube cover" id="YouTube-cover2">
+                    <a href="https://youtu.be/i658XMyAdOY?si=3iaJRfkj8xetUtZC">Kafka Trailer | Minecraft</a>
+                </div>
+                <div class="spazio-immagine" >
+                    <img onclick="YouTubeMinecraft1()" src="https://i9.ytimg.com/vi_webp/iRLl6Hw7IC8/mq2.webp?sqp=CIjnzKwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVigxMA8=&rs=AOn4CLBtzHu8ksQNMFvJJydZPnHfXZqD9Q" alt="Minecraft mob Bailu YouTube cover" id="YouTube-cover1">
+                    <a href="https://youtu.be/iRLl6Hw7IC8?si=WiQfq4qC-jP61vK3">Bailu trailer | Minecraft</a>
                 </div>
             </div>
+        </div>
             <div class="minecraft-TikTok">
                 <div class="scritta">
-                    <h2>Last Mobs</h2>
-                    <img onclick="TikTokChannel()" src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw" alt="TikTok Favicon" id="gigs-logo">
+                    <h2>Latest Mobs</h2>
+                    <img onclick="TikTokChannel()"
+                        src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw"
+                        alt="TikTok Favicon" id="gigs-logo">
                 </div>
             </div>
         </div>
@@ -382,26 +452,26 @@ color: transparent;
             }
         }
 
-        function XChannel(){
+        function XChannel() {
             var XChannel = 'https://twitter.com/VsCharacters';
             window.open(XChannel, '_blank');
         }
 
-        function ThreadsChannel(){
+        function ThreadsChannel() {
             var ThreadsChannel = 'https://www.threads.net/@anime_vs_gamecharacters';
             window.open(ThreadsChannel, '_blank');
         }
 
-        function CommunityChannel(){
+        function CommunityChannel() {
             var CommunityChannel = 'https://www.youtube.com/@anime_vs_gamecharacters/community';
             window.open(CommunityChannel, '_blank');
         }
-        
-        function Email(){
+
+        function Email() {
             var Email = "tuoindirizzoemail@example.com";
             var Oggetto = "\n##- Type the content above this line -## \n\nThe sender (you) found this email via the official YouTube channel ( https://www.youtube.com/@anime_vs_gamecharacters ) or on the official website ( https://vscharacters.github.io/ ), otherwise I would ask you if I could If you could tell me the source of this email, I would be infinitely grateful.\n\nThis email can be used to and for:\n- Report typos or linguistic inaccuracies\n- From anyone who watches my videos for questions and requests (related to the contents of my channel or what I post online, no personal questions)\n- From companies (in this case specify in the subject of the email that it is a company)\n\nRules:\n- Write in English or Italian\n- Enter the subject of the email\n- Be polite\n- Keep email family-friendly\n- Bullying is not allowed\n- No spoilers\n- No personal questions\n- No spam (emoji or text)! ";
             var mailto = "mailto:" + Email + "?subject=" + encodeURIComponent(Oggetto);
-             window.location.href = mailto;
+            window.location.href = mailto;
         }
 
         function openModal() {
@@ -418,20 +488,73 @@ color: transparent;
             event.stopPropagation();
         }
 
-        function FiverrChannel(){
+        function FiverrChannel() {
             var FiverrChannel = 'https://www.fiverr.com/anime_vs_game?source=gig_page';
             window.open(FiverrChannel, '_blank');
         }
 
-        function TikTokChannel(){
+        function TikTokChannel() {
             var TikTokChannel = 'https://www.tiktok.com/@anime_vs_gamecharacters';
             window.open(TikTokChannel, '_blank');
         }
 
-        function InstabugChannel(){
+        function InstabugChannel() {
             var InstabugChannel = 'https://www.instagram.com/anime_vs_gamecharacters/';
             window.open(InstabugChannel, '_blank');
         }
+
+        function YouTubeChannel1() {
+            var YouTubeChannel1 = 'https://www.youtube.com/@anime_vs_gamecharacters';
+            window.open(YouTubeChannel1, '_blank');
+        }
+        
+        function FiverrMinecraft() {
+            var FiverrMinecraft = 'https://it.fiverr.com/s/0BWX62';
+            window.open(FiverrMinecraft, '_blank');
+        }
+
+        function YouTubeMinecraft1() {
+            var YouTubeMinecraft1 = 'https://youtu.be/iRLl6Hw7IC8?si=WiQfq4qC-jP61vK3';
+            window.open(YouTubeMinecraft1, '_blank');
+        }
+
+        function YouTubeMinecraft2() {
+            var YouTubeMinecraft2 = 'https://youtu.be/i658XMyAdOY?si=-r488423k9emTtFL';
+            window.open(YouTubeMinecraft2, '_blank');
+        }
+
+        function changeImageOnHover() {
+    var imageElement = document.getElementById('YouTube-cover1');
+    imageElement.src = 'https://i.ytimg.com/an_webp/iRLl6Hw7IC8/mqdefault_6s.webp?du=3000&sqp=COLjzKwG&rs=AOn4CLCe3h-50MLq-YmNMhNIve5mpZEqjg';
+}
+
+function restoreOriginalImage() {
+    var imageElement = document.getElementById('YouTube-cover1');
+    imageElement.src = 'https://i9.ytimg.com/vi_webp/iRLl6Hw7IC8/mq2.webp?sqp=CIjnzKwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVigxMA8=&rs=AOn4CLBtzHu8ksQNMFvJJydZPnHfXZqD9Q';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var imageElement = document.getElementById('YouTube-cover1');
+    imageElement.addEventListener('mouseover', changeImageOnHover);
+    imageElement.addEventListener('mouseout', restoreOriginalImage);
+});
+
+function changeImageOnHover1() {
+    var imageElement1 = document.getElementById('YouTube-cover2');
+    imageElement1.src = 'https://i.ytimg.com/an_webp/i658XMyAdOY/mqdefault_6s.webp?du=3000&sqp=CLzizKwG&rs=AOn4CLA464SHxfZRrwRkmSviY6YOZeuoTg';
+}
+
+function restoreOriginalImage1() {
+    var imageElement1 = document.getElementById('YouTube-cover2');
+    imageElement1.src = 'https://i9.ytimg.com/vi_webp/i658XMyAdOY/mqdefault.webp?v=64e2eb88&sqp=COj5zKwG&rs=AOn4CLCyylWFuGDvPAaBkbY8f0j8Q6vhEw';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    var imageElement1 = document.getElementById('YouTube-cover2');
+    imageElement1.addEventListener('mouseover', changeImageOnHover1);
+    imageElement1.addEventListener('mouseout', restoreOriginalImage1);
+});
+
     </script>
 </body>
 
