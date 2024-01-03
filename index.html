@@ -544,7 +544,7 @@
         function Email() {
             var Email = "VsCharacters@yahoo.com";
             var Oggetto = "\n##- Type the content above this line -## \n\nThe sender (you) found this email via the official YouTube channel ( https://www.youtube.com/@anime_vs_gamecharacters ) or on the official website ( https://vscharacters.github.io/ ), otherwise I would ask you if I could If you could tell me the source of this email, I would be infinitely grateful.\n\nThis email can be used to and for:\n- Report typos or linguistic inaccuracies\n- From anyone who watches my videos for questions and requests (related to the contents of my channel or what I post online, no personal questions)\n- From companies (in this case specify in the subject of the email that it is a company)\n\nRules:\n- Write in English or Italian\n- Enter the subject of the email\n- Be polite\n- Keep email family-friendly\n- Bullying is not allowed\n- No spoilers\n- No personal questions\n- No spam (emoji or text)! ";
-            var mailto = "mailto:" + Email + "?subject=" + encodeURIComponent(Oggetto);
+            var mailto = "mailto:" + Email + "?body=" + encodeURIComponent(Oggetto);
             window.location.href = mailto;
         }
 
