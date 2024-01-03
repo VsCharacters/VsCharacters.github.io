@@ -284,6 +284,341 @@
             justify-content: space-between;
             padding: 20px;
         }
+
+        #gig1 {
+            display: none;
+        }
+
+        #link1 {
+            display: none;
+        }
+
+        .spazio-immagine-mobile h3 {
+            display: none;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .contenuto {
+                display: flex;
+                padding: 0 0 0 0;
+                position: sticky;
+                bottom: -34px;
+                background-color: rgba(255, 255, 255, 0.826);
+                z-index: 2;
+            }
+
+            .bio {
+                padding: 1rem 0 0 0;
+            }
+
+            .minecraft-TikTok .spazio {
+                display: none;
+            }
+
+            .bio .SocialGiornaglieri {
+                display: flex;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                justify-content: space-between;
+            }
+
+            .bio .descrizione {
+                padding-left: 1rem;
+            }
+
+            .bio .SocialGiornaglieri #x-logo {
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+            }
+
+            .bio .SocialGiornaglieri #Threads-logo {
+                cursor: pointer;
+                width: 70px;
+                height: 70px;
+                margin-top: -8px;
+                margin-left: 2%;
+            }
+
+            .bio .SocialGiornaglieri #YouTube-logo {
+                cursor: pointer;
+                margin-top: -2px;
+                margin-left: 2%;
+                width: 74px;
+                height: 55px;
+            }
+
+            .bio .SocialGiornaglieri #Email-anime-logo {
+                cursor: pointer;
+                margin-top: -25px;
+                margin-left: 2%;
+                width: 84px;
+                height: 84px;
+                z-index: 3;
+            }
+
+            .bio .descrizione #testo {
+                font-size: 20px;
+                background: linear-gradient(to right, rgb(0, 0, 0), rgb(148, 148, 148));
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .view-profile-btn {
+                cursor: pointer;
+                color: rgb(103, 103, 110);
+                text-decoration: none;
+                margin-left: 1%;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .gigs1 {
+                display: grid;
+                justify-content: space-between;
+                padding: 0 10% 0 10%;
+            }
+
+            .spazio-immagine {
+                display: flex;
+            }
+
+            .spazio-immagine a {
+                cursor: pointer;
+                display: inline;
+                max-width: 100%;
+                overflow: hidden;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 100%;
+                font-size: 30px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                transition: color 0.2s ease 0s;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+                padding-left: 1%;
+            }
+
+            .spazio-immagine-mobile h3 {
+                display: flex;
+                font-size: 32.99px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                transition: color 0.2s ease 0s;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+                padding-left: 1%;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+            .modal-content {
+                background-color: #fff;
+                padding: 0px 20px 0px 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                position: relative;
+                width: 42.5rem;
+                height: 55.5rem;
+                overflow: auto;
+            }
+
+            .scritta {
+                font-size: 27px;
+            }
+
+        }
+
+        @media only screen and (max-width: 767px) {
+            /* Stili per dispositivi mobile */
+
+            html {
+                top: 0;
+                left: 0;
+            }
+
+            .icona img {
+                border-radius: 50%;
+                display: grid;
+                top: -80px;
+            }
+
+            .icona {
+                height: 60px;
+            }
+
+            .contenuto {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                position: sticky;
+                bottom: -34px;
+                background-color: rgba(255, 255, 255, 0.826);
+                z-index: 2;
+            }
+
+            .user {
+                padding: 0;
+                border: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .iscriviti {
+                padding: 0;
+            }
+
+            .user h1 {
+                font-size: 30px;
+                font-weight: 800;
+            }
+
+            .user .menzione {
+                padding: 0;
+                padding-left: 1rem;
+                font-size: 20px;
+                border: 0;
+            }
+
+            .bio {
+                padding: 1rem 0 0 0;
+            }
+
+            .minecraft-TikTok .spazio {
+                display: none;
+            }
+
+            .bio .SocialGiornaglieri {
+                display: flex;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                justify-content: space-between;
+            }
+
+            .bio .descrizione {
+                padding-left: 0rem;
+            }
+
+            .bio .SocialGiornaglieri #x-logo {
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+            }
+
+            .bio .SocialGiornaglieri #Threads-logo {
+                cursor: pointer;
+                width: 70px;
+                height: 70px;
+                margin-top: -8px;
+                margin-left: 2%;
+            }
+
+            .bio .SocialGiornaglieri #YouTube-logo {
+                cursor: pointer;
+                margin-top: -2px;
+                margin-left: 2%;
+                width: 74px;
+                height: 55px;
+            }
+
+            .bio .SocialGiornaglieri #Email-anime-logo {
+                cursor: pointer;
+                margin-top: -25px;
+                margin-left: 2%;
+                width: 84px;
+                height: 84px;
+                z-index: 3;
+            }
+
+            .bio .descrizione #testo {
+                font-size: 20px;
+                background: linear-gradient(to right, rgb(0, 0, 0), rgb(148, 148, 148));
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .view-profile-btn {
+                cursor: pointer;
+                color: rgb(103, 103, 110);
+                text-decoration: none;
+                margin-left: 0rem;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .gigs1 {
+                display: grid;
+                /* cambia questo a fine lavoro */
+                justify-content: space-between;
+                padding: 0 10% 0 10%;
+            }
+
+            .spazio-immagine {
+                display: flex;
+            }
+
+            .spazio-immagine a {
+                display: none;
+            }
+
+            .spazio-immagine-mobile h3 {
+                font-size: 32.99px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                transition: color 0.2s ease 0s;
+                -webkit-text-stroke-width: 3px;
+                -webkit-text-stroke-color: rgb(0, 0, 0);
+                padding-left: 1%;
+                margin-block-start: 0em;
+                margin-block-end: 0em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+
+            .modal-content {
+                background-color: #fff;
+                padding: 0px 20px 0px 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                position: relative;
+                width: 42.5rem;
+                height: 55.5rem;
+                overflow: auto;
+            }
+
+            .scritta {
+                font-size: 27px;
+                border: none;
+                padding: none;
+            }
+
+            .minecraft-TikTok {
+                display: none;
+            }
+
+            .gigs1 img {
+                display: none;
+            }
+
+            #gig1 {
+                display: flex;
+                text-size-adjust: 100%;
+            }
+
+            #link1 {
+                display: flex;
+            }
+
+
+
+            #gig1-primary {
+                display: none;
+            }
+        }
     </style>
 
 </head>
@@ -410,11 +745,14 @@
             <div class="gigs1">
                 <div class="minecraft-gig">
                     <div class="scritta">
-                        <h2>Gig 1</h2>
+                        <h2 id="gig1-primary">Gig 1</h2>
+                        <h2 id="gig1">Custom mob for you: </h2>
                         <img onclick="FiverrChannel()"
                             src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf"
                             alt="Fiverr Favicon" id="gigs-logo">
                     </div>
+                    <a href="https://it.fiverr.com/s/0BWX62" id="link1">I will make mob for Minecraft (Link that takes
+                        you to the Fiverr page, click for further information)</a>
                     <div class="spazio-immagine">
                         <img onclick="FiverrMinecraft()"
                             src="https://fiverr-res.cloudinary.com/images/t_medium7,q_auto,f_auto,q_auto,f_auto/gigs/303225371/original/dfa9e258c546efcd54dde9e0066cdf431a56d6f9/create-glow-in-the-dark-mob-for-your-minecraft-bedrock-edition-pc-mobile.png"
@@ -499,10 +837,14 @@
                                         href="https://www.tiktok.com/tag/japanesemusic?refer=embed">#japanesemusic</a>
                                     <a target="_blank" title="♬ suono originale - Anime&#38;Game together"
                                         href="https://www.tiktok.com/music/suono-originale-7318565717130070817?refer=embed">♬
-                                        suono originale - Anime&#38;Game together</a> </section>
+                                        suono originale - Anime&#38;Game together</a>
+                                </section>
                             </blockquote>
                             <script async src="https://www.tiktok.com/embed.js"></script>
                         </div>
+                    </div>
+                    <div class="spazio-immagine-mobile">
+                        <h3>To view the TikTok enable "Desktop site"</h3>
                     </div>
                 </div>
             </div>
