@@ -9,10 +9,10 @@
         href="https://yt3.googleusercontent.com/ZJw2NMfKtpB_oBaVM0rQx0GrHXansVIgDQJZkDNxZc62VPaCWZ4560Todsy43tUIBQJer4elpcI=s176-c-k-c0x00ffffff-no-rj"
         type="image/x-icon">
     <style>
-
-        .banner{
+        .banner {
             background-color: #000000;
         }
+
         .banner img {
             width: 100%;
             height: auto;
@@ -25,6 +25,14 @@
 
         body {
             margin: 0;
+        }
+
+        .sfondo-corpo-sito {
+            background-image: url("cornice\ gigs\ 1\ Da.jpeg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 130vh;
         }
 
         .contenuto {
@@ -222,6 +230,7 @@
         .gigs1 {
             display: flex;
             justify-content: space-between;
+            padding: 0 10% 0 10%;
         }
 
         .scritta {
@@ -234,41 +243,46 @@
             cursor: pointer;
         }
 
-        .spazio-immagine{
+        .spazio-immagine {
             display: grid;
         }
 
-        .spazio-immagine img{
+        .spazio-immagine img {
             cursor: pointer;
             clip-path: inset(0 0 0 0);
-    width: 184px;
-    height: 184px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: opacity 0.2s ease-in-out;
+            width: 184px;
+            height: 184px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: opacity 0.2s ease-in-out;
         }
 
-        .spazio-immagine:hover img{
+        .spazio-immagine:hover img {
             opacity: 80%;
         }
 
-        .spazio-immagine a{
+        .spazio-immagine a {
             cursor: pointer;
             display: inline;
-    max-width: 100%;
-    overflow: hidden;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    line-height: 22px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgb(31, 31, 31);
-    transition: color 0.2s ease 0s;
+            max-width: 100%;
+            overflow: hidden;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 22px;
+            font-size: 14px;
+            font-weight: bold;
+            color: rgb(31, 31, 31);
+            transition: color 0.2s ease 0s;
         }
 
-        .spazio{
-            display: flex;
+        .spazio {
+            display: grid;
+        }
+
+        #minecraft-video {
+            justify-content: space-between;
+            padding: 20px;
         }
     </style>
 
@@ -391,45 +405,105 @@
             </div>
         </div>
     </div>
-
-    <div class="corpo-sito">
-        <div class="gigs1">
-            <div class="minecraft-gig">
-                <div class="scritta">
-                    <h2>Gig 1</h2>
-                    <img onclick="FiverrChannel()"
-                        src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf"
-                        alt="Fiverr Favicon" id="gigs-logo">
+    <div class="sfondo-corpo-sito">
+        <div class="corpo-sito">
+            <div class="gigs1">
+                <div class="minecraft-gig">
+                    <div class="scritta">
+                        <h2>Gig 1</h2>
+                        <img onclick="FiverrChannel()"
+                            src="https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn:ANd9GcTzgsIBoqCXq41xpupDae9chJLDz3ibC1m91BQXqoY3Xp6KMsOSPkOpVAb8F8TbvB0EUh8I9JcOqiySFLglbiqg3hTweSSA__mPpBGX_ZzNIYlf"
+                            alt="Fiverr Favicon" id="gigs-logo">
+                    </div>
+                    <div class="spazio-immagine">
+                        <img onclick="FiverrMinecraft()"
+                            src="https://fiverr-res.cloudinary.com/images/t_medium7,q_auto,f_auto,q_auto,f_auto/gigs/303225371/original/dfa9e258c546efcd54dde9e0066cdf431a56d6f9/create-glow-in-the-dark-mob-for-your-minecraft-bedrock-edition-pc-mobile.png"
+                            alt="Minecraft mob ???">
+                        <a href="https://it.fiverr.com/s/0BWX62">I will make mob for Minecraft</a>
+                    </div>
                 </div>
-                <div class="spazio-immagine">
-                    <img onclick="FiverrMinecraft()" src="https://fiverr-res.cloudinary.com/images/t_medium7,q_auto,f_auto,q_auto,f_auto/gigs/303225371/original/dfa9e258c546efcd54dde9e0066cdf431a56d6f9/create-glow-in-the-dark-mob-for-your-minecraft-bedrock-edition-pc-mobile.png" alt="Minecraft mob ???">
-                    <a href="https://it.fiverr.com/s/0BWX62">I will make mob for Minecraft</a>
+                <div class="minecraft-YouTube">
+                    <div class="scritta">
+                        <h2>Latest Mobs</h2>
+                        <img onclick="YouTubeChannel1()"
+                            src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg"
+                            alt="YouTube Favicon" id="gigs-logo">
+                    </div>
+                    <div class="spazio" id="minecraft-video">
+                        <div class="spazio-immagine">
+                            <iframe width="284" height="159.75"
+                                src="https://www.youtube-nocookie.com/embed/T3lnc5p174M?si=gprBFsb8mnte6HGH&amp;controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <a href="https://youtu.be/iRLl6Hw7IC8?si=WiQfq4qC-jP61vK3">All the mobs of 2024</a>
+                        </div>
+                        <br>
+                        <div class="spazio-immagine">
+                            <iframe width="284" height="159.75"
+                                src="https://www.youtube-nocookie.com/embed/i658XMyAdOY?si=1tl1N_4u41muEmec&amp;controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <a href="https://youtu.be/i658XMyAdOY?si=3iaJRfkj8xetUtZC">Kafka trailer | Minecraft</a>
+                        </div>
+                        <br>
+                        <div class="spazio-immagine">
+                            <iframe width="284" height="159.75"
+                                src="https://www.youtube-nocookie.com/embed/iRLl6Hw7IC8?si=3MMesifyaix_CIsa&amp;controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <a href="https://youtu.be/iRLl6Hw7IC8?si=WiQfq4qC-jP61vK3">Bailu trailer | Minecraft</a>
+                        </div>
+                        <br>
+                        <div class="spazio-immagine">
+                            <iframe width="284" height="159.75"
+                                src="https://www.youtube-nocookie.com/embed/LLMgTeJzI0I?si=RmyaeHRsQiDnGdS2&amp;controls=0&amp;start=101"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <a href="https://youtu.be/iRLl6Hw7IC8?si=WiQfq4qC-jP61vK3">Suzume trailer | Minecraft</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="minecraft-YouTube">
-                <div class="scritta">
-                    <h2>Latest Mobs</h2>
-                    <img onclick="YouTubeChannel1()"
-                        src="https://encrypted-tbn0.gstatic.com/favicon-tbn?q=tbn:ANd9GcQK5VoWBWTP7Ca7anSCgAxMQf1k1TanOES5v9d-Cvsi9IgVh1v8PELi_eaSU-gpcfF4RHtEteDc0sD6AznYZ_vg3GtGigex4dpmwp39A6Tpz34UyAg"
-                        alt="YouTube Favicon" id="gigs-logo">
-                </div>
-                <div class="spazio">
-                <div class="spazio-immagine" >
-                    <img onclick="YouTubeMinecraft2()" src="https://i9.ytimg.com/vi_webp/i658XMyAdOY/mqdefault.webp?v=64e2eb88&sqp=COj5zKwG&rs=AOn4CLCyylWFuGDvPAaBkbY8f0j8Q6vhEw" alt="Minecraft mob Kafka YouTube cover" id="YouTube-cover2">
-                    <a href="https://youtu.be/i658XMyAdOY?si=3iaJRfkj8xetUtZC">Kafka Trailer | Minecraft</a>
-                </div>
-                <div class="spazio-immagine" >
-                    <img onclick="YouTubeMinecraft1()" src="https://i9.ytimg.com/vi_webp/iRLl6Hw7IC8/mq2.webp?sqp=CIjnzKwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVigxMA8=&rs=AOn4CLBtzHu8ksQNMFvJJydZPnHfXZqD9Q" alt="Minecraft mob Bailu YouTube cover" id="YouTube-cover1">
-                    <a href="https://youtu.be/iRLl6Hw7IC8?si=WiQfq4qC-jP61vK3">Bailu trailer | Minecraft</a>
-                </div>
-            </div>
-        </div>
-            <div class="minecraft-TikTok">
-                <div class="scritta">
-                    <h2>Latest Mobs</h2>
-                    <img onclick="TikTokChannel()"
-                        src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw"
-                        alt="TikTok Favicon" id="gigs-logo">
+                <div class="minecraft-TikTok">
+                    <div class="scritta">
+                        <h2>Latest Mobs</h2>
+                        <img onclick="TikTokChannel()"
+                            src="https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcQygKR9Wk54Cc_JsO1lyQb_1WH1e7-2vnoNPKwyIfUp5ytWAZgsPmk0id-xzupFpGlSOE8B0Cq9W6o0kP8adjPc1IHTMJDkjQRDyTUOL6wXevQhZw"
+                            alt="TikTok Favicon" id="gigs-logo">
+                    </div>
+                    <div class="spazio">
+                        <div class="spazio-immagine">
+                            <blockquote class="tiktok-embed"
+                                cite="https://www.tiktok.com/@anime_vs_gamecharacters/video/7318565581505056032"
+                                data-video-id="7318565581505056032" style="max-width: 605px;min-width: 325px;">
+                                <section> <a target="_blank" title="@anime_vs_gamecharacters"
+                                        href="https://www.tiktok.com/@anime_vs_gamecharacters?refer=embed">@anime_vs_gamecharacters</a>
+                                    Minecraft Yamero! <a title="2023" target="_blank"
+                                        href="https://www.tiktok.com/tag/2023?refer=embed">#2023</a> <a
+                                        title="internetyamero" target="_blank"
+                                        href="https://www.tiktok.com/tag/internetyamero?refer=embed">#internetyamero</a>
+                                    <a title="internet" target="_blank"
+                                        href="https://www.tiktok.com/tag/internet?refer=embed">#internet</a> <a
+                                        title="minecraft" target="_blank"
+                                        href="https://www.tiktok.com/tag/minecraft?refer=embed">#minecraft</a> <a
+                                        title="jpop" target="_blank"
+                                        href="https://www.tiktok.com/tag/jpop?refer=embed">#jpop</a> <a title="aiobahn"
+                                        target="_blank"
+                                        href="https://www.tiktok.com/tag/aiobahn?refer=embed">#aiobahn</a> <a
+                                        title="kotoko" target="_blank"
+                                        href="https://www.tiktok.com/tag/kotoko?refer=embed">#kotoko</a> <a
+                                        title="japanesemusic" target="_blank"
+                                        href="https://www.tiktok.com/tag/japanesemusic?refer=embed">#japanesemusic</a>
+                                    <a target="_blank" title="♬ suono originale - Anime&#38;Game together"
+                                        href="https://www.tiktok.com/music/suono-originale-7318565717130070817?refer=embed">♬
+                                        suono originale - Anime&#38;Game together</a> </section>
+                            </blockquote>
+                            <script async src="https://www.tiktok.com/embed.js"></script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -468,7 +542,7 @@
         }
 
         function Email() {
-            var Email = "tuoindirizzoemail@example.com";
+            var Email = "VsCharacters@yahoo.com";
             var Oggetto = "\n##- Type the content above this line -## \n\nThe sender (you) found this email via the official YouTube channel ( https://www.youtube.com/@anime_vs_gamecharacters ) or on the official website ( https://vscharacters.github.io/ ), otherwise I would ask you if I could If you could tell me the source of this email, I would be infinitely grateful.\n\nThis email can be used to and for:\n- Report typos or linguistic inaccuracies\n- From anyone who watches my videos for questions and requests (related to the contents of my channel or what I post online, no personal questions)\n- From companies (in this case specify in the subject of the email that it is a company)\n\nRules:\n- Write in English or Italian\n- Enter the subject of the email\n- Be polite\n- Keep email family-friendly\n- Bullying is not allowed\n- No spoilers\n- No personal questions\n- No spam (emoji or text)! ";
             var mailto = "mailto:" + Email + "?subject=" + encodeURIComponent(Oggetto);
             window.location.href = mailto;
@@ -507,7 +581,7 @@
             var YouTubeChannel1 = 'https://www.youtube.com/@anime_vs_gamecharacters';
             window.open(YouTubeChannel1, '_blank');
         }
-        
+
         function FiverrMinecraft() {
             var FiverrMinecraft = 'https://it.fiverr.com/s/0BWX62';
             window.open(FiverrMinecraft, '_blank');
@@ -524,36 +598,36 @@
         }
 
         function changeImageOnHover() {
-    var imageElement = document.getElementById('YouTube-cover1');
-    imageElement.src = 'https://i.ytimg.com/an_webp/iRLl6Hw7IC8/mqdefault_6s.webp?du=3000&sqp=COLjzKwG&rs=AOn4CLCe3h-50MLq-YmNMhNIve5mpZEqjg';
-}
+            var imageElement = document.getElementById('YouTube-cover1');
+            imageElement.src = 'https://i.ytimg.com/an_webp/iRLl6Hw7IC8/mqdefault_6s.webp?du=3000&sqp=COLjzKwG&rs=AOn4CLCe3h-50MLq-YmNMhNIve5mpZEqjg';
+        }
 
-function restoreOriginalImage() {
-    var imageElement = document.getElementById('YouTube-cover1');
-    imageElement.src = 'https://i9.ytimg.com/vi_webp/iRLl6Hw7IC8/mq2.webp?sqp=CIjnzKwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVigxMA8=&rs=AOn4CLBtzHu8ksQNMFvJJydZPnHfXZqD9Q';
-}
+        function restoreOriginalImage() {
+            var imageElement = document.getElementById('YouTube-cover1');
+            imageElement.src = 'https://i9.ytimg.com/vi_webp/iRLl6Hw7IC8/mq2.webp?sqp=CIjnzKwG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgVigxMA8=&rs=AOn4CLBtzHu8ksQNMFvJJydZPnHfXZqD9Q';
+        }
 
-document.addEventListener('DOMContentLoaded', function () {
-    var imageElement = document.getElementById('YouTube-cover1');
-    imageElement.addEventListener('mouseover', changeImageOnHover);
-    imageElement.addEventListener('mouseout', restoreOriginalImage);
-});
+        document.addEventListener('DOMContentLoaded', function () {
+            var imageElement = document.getElementById('YouTube-cover1');
+            imageElement.addEventListener('mouseover', changeImageOnHover);
+            imageElement.addEventListener('mouseout', restoreOriginalImage);
+        });
 
-function changeImageOnHover1() {
-    var imageElement1 = document.getElementById('YouTube-cover2');
-    imageElement1.src = 'https://i.ytimg.com/an_webp/i658XMyAdOY/mqdefault_6s.webp?du=3000&sqp=CLzizKwG&rs=AOn4CLA464SHxfZRrwRkmSviY6YOZeuoTg';
-}
+        function changeImageOnHover1() {
+            var imageElement1 = document.getElementById('YouTube-cover2');
+            imageElement1.src = 'https://i.ytimg.com/an_webp/i658XMyAdOY/mqdefault_6s.webp?du=3000&sqp=CLzizKwG&rs=AOn4CLA464SHxfZRrwRkmSviY6YOZeuoTg';
+        }
 
-function restoreOriginalImage1() {
-    var imageElement1 = document.getElementById('YouTube-cover2');
-    imageElement1.src = 'https://i9.ytimg.com/vi_webp/i658XMyAdOY/mqdefault.webp?v=64e2eb88&sqp=COj5zKwG&rs=AOn4CLCyylWFuGDvPAaBkbY8f0j8Q6vhEw';
-}
+        function restoreOriginalImage1() {
+            var imageElement1 = document.getElementById('YouTube-cover2');
+            imageElement1.src = 'https://i9.ytimg.com/vi_webp/i658XMyAdOY/mqdefault.webp?v=64e2eb88&sqp=COj5zKwG&rs=AOn4CLCyylWFuGDvPAaBkbY8f0j8Q6vhEw';
+        }
 
-document.addEventListener('DOMContentLoaded', function () {
-    var imageElement1 = document.getElementById('YouTube-cover2');
-    imageElement1.addEventListener('mouseover', changeImageOnHover1);
-    imageElement1.addEventListener('mouseout', restoreOriginalImage1);
-});
+        document.addEventListener('DOMContentLoaded', function () {
+            var imageElement1 = document.getElementById('YouTube-cover2');
+            imageElement1.addEventListener('mouseover', changeImageOnHover1);
+            imageElement1.addEventListener('mouseout', restoreOriginalImage1);
+        });
 
     </script>
 </body>
