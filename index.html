@@ -32,9 +32,9 @@
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
-            height: 200vh; 
-    margin: 0; 
-    padding: 0;
+            height: 200vh;
+            margin: 0;
+            padding: 0;
         }
 
         .contenuto {
@@ -42,7 +42,7 @@
             padding: 0 3% 0 12%;
             position: sticky;
             bottom: -34px;
-            background-color: rgba(255, 255, 255, 0.826);
+            background: linear-gradient(to top left, #b5d037, #f5e037);
             z-index: 2;
         }
 
@@ -50,6 +50,7 @@
 
         .icona img {
             border-radius: 200px;
+            border: 1px solid #000000;
             display: flex;
             position: relative;
             top: -80px;
@@ -229,6 +230,72 @@
             font-weight: bold;
         }
 
+        .information-section {
+            display: flex;
+            padding: 0 7% 0 7%;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .timer {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            color: #333;
+            padding: 12% 0% 0 3%;
+        }
+
+        #countdown {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: pulse 1s infinite alternate;
+        }
+
+        #countdown.expired {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        #event-name {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #333;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        #countdown span {
+            margin: 0 10px;
+        }
+
+
+
         .gigs1 {
             display: flex;
             justify-content: space-between;
@@ -375,6 +442,11 @@
                 font-size: 20px;
             }
 
+            .information-section {
+                display: flex;
+                padding: 0 2% 0 0%;
+            }
+
             .gigs1 {
                 display: grid;
                 justify-content: space-between;
@@ -446,7 +518,7 @@
             .icona img {
                 border-radius: 50%;
                 display: grid;
-                top: -80px;
+                top: -100px;
             }
 
             .icona {
@@ -461,6 +533,7 @@
                 bottom: -34px;
                 background-color: rgba(255, 255, 255, 0.826);
                 z-index: 2;
+                padding-bottom: 3%;
             }
 
             .user {
@@ -552,6 +625,15 @@
                 font-size: 20px;
             }
 
+            .information-section {
+                display: block;
+                padding: 0 7% 0 7%;
+            }
+
+            .timer{
+                padding: 0% 0% 3% 0%;
+            }
+
             .gigs1 {
                 display: grid;
                 /* cambia questo a fine lavoro */
@@ -588,7 +670,7 @@
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
                 position: relative;
                 width: 42.5rem;
-    height: 42.5rem;
+                height: 42.5rem;
                 overflow: auto;
             }
 
@@ -627,7 +709,7 @@
 
 <body>
     <div class="banner">
-        <img src="./Copertina riassunto 2023.png" alt="Page banner (temporaneo)">
+        <img src="./Copertina-riassunto-2023.webp" alt="Page banner (temporaneo)">
     </div>
     <div class="contenuto">
         <div class="icona">
@@ -637,7 +719,7 @@
         <div class="user">
             <h1>Anime&Game together</h1>
             <div class="menzione">
-                <h3>@anime_vs_gamecharacters <br>🔘 73 Followers 🔘 61 videos</h3>
+                <h3>@anime_vs_gamecharacters <br>🔘 74 Followers 🔘 61 videos</h3>
             </div>
         </div>
         <div class="iscriviti">
@@ -665,7 +747,8 @@
             </div>
             <div class="bio2" id="modalBio">
 
-                <p>New video about anime or game characters every Sunday or Monday</p>
+                <p>■ New next video when?</p>
+                <p>Visit the website or the X / Threads page to find out when I post a new video.</p>
                 <br>
                 <p>■ Anime&Game together</p>
                 <p> 🔸Website born on 27/12/2023</p>
@@ -738,7 +821,29 @@
                 <p>Websites created with a github subdomain are static sites, therefore there is no data collected on
                     who visits the website or cookies necessary for the functioning of the website</p>
                 <br>
-                <p>The site was updated on: 09/01/2024 17:15 UTC+2</p>
+                <p>The site was updated on: 03/02/2024 18:00 UTC+2</p>
+            </div>
+        </div>
+    </div>
+    <div class="information-section">
+        <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">📹 New video dropping Sunday, February 25th, 2024! Time TBD, so stay tuned for
+                updates. (Date/time subject to change; I&#39;ll keep you posted!) Next up: Minecraft Glow UP. <a
+                    href="https://twitter.com/hashtag/Anime?src=hash&amp;ref_src=twsrc%5Etfw">#Anime</a> <a
+                    href="https://twitter.com/hashtag/Minecraft?src=hash&amp;ref_src=twsrc%5Etfw">#Minecraft</a> <a
+                    href="https://t.co/L4vRirsycz">pic.twitter.com/L4vRirsycz</a></p>&mdash; anime_vs_game characters
+            (@VsCharacters) <a
+                href="https://twitter.com/VsCharacters/status/1753873142282346749?ref_src=twsrc%5Etfw">February 3,
+                2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="timer">
+            <div id="event-name">Next event: One year since my first mob creation!</div>
+            <div id="countdown">
+                <span id="days">0</span> days
+                <span id="hours">0</span> hours
+                <span id="minutes">0</span> minutes
+                <span id="seconds">0</span> seconds
             </div>
         </div>
     </div>
@@ -754,22 +859,33 @@
                     </div>
                     <h2 id="gig1-primary">Costum mob for you:</h2>
                     <h2 id="gig1">Custom mob for you: </h2>
-               <!--     <a href="https://it.fiverr.com/s/0BWX62" id="link1">I will make mob for Minecraft (Link that takes
+                    <!--     <a href="https://it.fiverr.com/s/0BWX62" id="link1">I will make mob for Minecraft (Link that takes
                         you to the Fiverr page, click for further information)</a> -->
-                        <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
-                            <a itemprop='url' href=https://www.fiverr.com/anime_vs_game rel="nofollow" target="_blank" style='display: inline-block;'>
-                               <div class='fiverr-seller-content' id='fiverr-seller-widget-content-d2c9b4d0-0166-4e7b-bc1f-fe2ba2b114f2' itemprop='contentURL' style='display: none;'></div>
-                               <div id='fiverr-widget-seller-data' style='display: none;'>
-                                   <div itemprop='name' >anime_vs_game</div>
-                                   <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
-                                   <div itemprop='jobtitle'>Seller</div>
-                                   <div itemprop='description'>Hi, I'm 18 and I'm a person who loves everything that can combine video games and anime. Computer study at school and drawing at home. With my experience I will do my best to satisfy you, and at the same time I will be happy to learn!</div>
-                               </div>
-                           </a>
-                       </div>
-                       
-                       <script id='fiverr-seller-widget-script-d2c9b4d0-0166-4e7b-bc1f-fe2ba2b114f2' src='https://widgets.fiverr.com/api/v1/seller/anime_vs_game?widget_id=d2c9b4d0-0166-4e7b-bc1f-fe2ba2b114f2' data-config='{"category_name":"\n                                    Programming \u0026 Tech\n\n                            "}' async='true' defer='true'></script>
-                       
+                    <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget'
+                        style='display: inline-block;'>
+                        <a itemprop='url' href=https://www.fiverr.com/anime_vs_game rel="nofollow" target="_blank"
+                            style='display: inline-block;'>
+                            <div class='fiverr-seller-content'
+                                id='fiverr-seller-widget-content-d2c9b4d0-0166-4e7b-bc1f-fe2ba2b114f2'
+                                itemprop='contentURL' style='display: none;'></div>
+                            <div id='fiverr-widget-seller-data' style='display: none;'>
+                                <div itemprop='name'>anime_vs_game</div>
+                                <div itemscope itemtype='http://schema.org/Organization'><span
+                                        itemprop='name'>Fiverr</span></div>
+                                <div itemprop='jobtitle'>Seller</div>
+                                <div itemprop='description'>Hi, I'm 18 and I'm a person who loves everything that can
+                                    combine video games and anime. Computer study at school and drawing at home. With my
+                                    experience I will do my best to satisfy you, and at the same time I will be happy to
+                                    learn!</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <script id='fiverr-seller-widget-script-d2c9b4d0-0166-4e7b-bc1f-fe2ba2b114f2'
+                        src='https://widgets.fiverr.com/api/v1/seller/anime_vs_game?widget_id=d2c9b4d0-0166-4e7b-bc1f-fe2ba2b114f2'
+                        data-config='{"category_name":"\n                                    Programming \u0026 Tech\n\n                            "}'
+                        async='true' defer='true'></script>
+
                     <div class="spazio-immagine">
                         <a href="https://it.fiverr.com/s/ProG7o">Or click here</a>
                     </div>
@@ -984,6 +1100,32 @@
             imageElement1.addEventListener('mouseover', changeImageOnHover1);
             imageElement1.addEventListener('mouseout', restoreOriginalImage1);
         });
+        // Data dell'evento (anno, mese - 1, giorno, ore, minuti, secondi)
+        var eventDate = new Date(Date.UTC(2024, 1, 22, 9, 0, 0));
+
+
+        function updateTimer() {
+            var currentDate = new Date(); // Otteniamo la data corrente in UTC
+            var timeDiff = eventDate - currentDate;
+
+            if (timeDiff <= 0) {
+                document.getElementById('countdown').innerHTML = "One year since my first mob creation! ";
+                document.getElementById('countdown').classList.add('expired');
+                return;
+            }
+
+            var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML = days + " days " + hours + " hours " + minutes + " minuts " + seconds + " seconds ";
+
+            setTimeout(updateTimer, 1000);
+        }
+
+        updateTimer();
+
 
     </script>
 </body>
